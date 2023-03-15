@@ -1,7 +1,8 @@
 import openai
 import streamlit as st
+import os
 
-openai.api_key = "OPENAI_API_KEY"
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 st.title("自分専用のChatGPT AIアシスタント")
 
